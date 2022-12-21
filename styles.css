@@ -1,0 +1,66 @@
+body{
+    background-image: url(./img/2560x1600-Fondo-de-pantalla-rojo-gratis-Full-HD.jpg);
+    /* background-color:darkred; */
+    margin: 10px;
+ } 
+.container_card{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin: 30px;
+    
+}
+.pokeCard{
+    background-color: white;
+    border-radius: 70px 70px 70px 70px;
+    background-repeat: no-repeat;
+    border: 5px solid orange;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    font-family: 'Comic Neue', cursive;
+    background-image:  url(https://cdn-icons-png.flaticon.com/512/528/528101.png);
+    background-position: center;
+    background-size: cover;
+    background-color: brown;
+    min-width: 250px;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.img_podedex{
+    width: 20%;
+
+
+}
+.color_back-tittle{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-naranja-abstracto-lineas-efecto-semitono_1017-32107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin: 20px 0px;
+    
+    
+}
+.img{
+    width: 100%;
+}
+.img_box{
+    width:100% ;
+}
+.text_card{
+    font-size: 20px;
+    background-color: orange;
+    border-radius: 30px;
+    /* margin: 5px 30px; */
+    margin: 10px 0px;
+    padding: 5px 80px;
+
+}
