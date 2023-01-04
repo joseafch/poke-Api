@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 50px;
+    gap: 60px;
     justify-content: space-evenly;
     margin: 30px;
     
@@ -20,7 +20,7 @@ body{
     border: 5px solid orange;
     align-items: center;
     text-align: center;
-    width: 15%;
+    width: 20%;
     font-family: 'Comic Neue', cursive;
     background-image:  url(https://cdn-icons-png.flaticon.com/512/528/528101.png);
     background-position: center;
@@ -45,7 +45,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 10px;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     
     
 }
@@ -61,6 +61,27 @@ body{
     border-radius: 30px;
     /* margin: 5px 30px; */
     margin: 10px 0px;
-    padding: 5px 80px;
+    padding: 5px 70px;
 
+}
+.text_card_name{
+    font-size: 20px;
+    background-color: orange;
+    border-radius: 30px;
+    /* margin: 5px 30px; */
+    margin: 10px 0px;
+    padding: 5px 70px;
+}
+.search_pokemon_input{
+    height: 50px;
+    text-align:center;
+    width: 100%;
+
+}
+.search_pokemon{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
 }

@@ -20,7 +20,7 @@ await number(151);
     const newDivSS = document.createElement("div");
     newDivSS.className= 'pokeCard'
     newDivSS.innerHTML = `
-<h4 class="text_card">${pokemon.name}</h4>
+<h4 class="text_card_name">${pokemon.name}</h4>
 <div class="img_box">
 <img class="img" src="${pokemon.sprites.other.dream_world.front_default}"/></div>
 <h4 class="text_card">${pokemon.types[0].type.name}</h4>
@@ -31,7 +31,19 @@ await number(151);
 `;
     mydiv$$.appendChild(newDivSS);
   }
+  let text$$=document.querySelectorAll('.text_card')
+let card$$= document.querySelectorAll('.pokecard')
+console.log(card$$.style);
 
+  let displayNone=()=>{
+    text$$.style='display:none'
+  }
+  card$$.addEventListener('click',displayNone
+  )
 
 };
 init();
+
+
+
+
