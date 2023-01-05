@@ -5,18 +5,21 @@ const getPokemon = async (name) => {
   //   console.log(responseJson);
   pokeArray = [...pokeArray, responseJson];
 };
-let number=async (num) => {
-    for (let i = 1; i <= num; i++) {
+let number=async () => {
+    for (let i = 1; i <= 151; i++) {
         
       await getPokemon (i)   
     }
-   
-}
-const init = async () => {
+   init(pokeArray)
+   inputsearch()
+};
+const init = (pokeArray) => {
+  const mydiv$$ = document.querySelector(".container_card");
 
-await number(151);
+  mydiv$$.innerHTML=''
+
    for (const pokemon of pokeArray) {
-    const mydiv$$ = document.querySelector(".container_card");
+
     const newDivSS = document.createElement("div");
     newDivSS.className= 'pokeCard'
     newDivSS.innerHTML = `
@@ -31,18 +34,23 @@ await number(151);
 `;
     mydiv$$.appendChild(newDivSS);
   }
-  let text$$=document.querySelectorAll('.text_card')
-let card$$= document.querySelectorAll('.pokecard')
-console.log(card$$.style);
 
-  let displayNone=()=>{
-    text$$.style='display:none'
-  }
-  card$$.addEventListener('click',displayNone
-  )
 
 };
-init();
+let inputsearch = () => {
+  input$$=document.querySelector('input')
+  input$$.addEventListener('input', ()=> searchPokemon(input$$.value, pokeArray)
+  )
+};
+inputsearch()
+const searchPokemon = (filtro, pokemones) => {
+  // console.log('searchPokemon');
+let filtropokemon = pokemones.filter((pokeArray)=> pokeArray.name.toLowerCase().includes(filtro.toLowerCase()));
+init(filtropokemon)
+}
+number()
+// init();
+
 
 
 
