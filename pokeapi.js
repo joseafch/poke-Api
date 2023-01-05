@@ -45,7 +45,9 @@ let inputsearch = () => {
 inputsearch()
 const searchPokemon = (filtro, pokemones) => {
   // console.log('searchPokemon');
-let filtropokemon = pokemones.filter((pokeArray)=> pokeArray.name.toLowerCase().includes(filtro.toLowerCase()));
+let filtropokemon = pokemones.filter((pokeArray)=> 
+pokeArray.name.toLowerCase().includes(filtro.toLowerCase()) 
+);
 init(filtropokemon)
 }
 number()
