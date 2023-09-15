@@ -26,9 +26,9 @@ const init = (pokeArray) => {
 <h4 class="text_card_name">${pokemon.name}</h4>
 <div class="img_box">
 <img class="img" src="${pokemon.sprites.other.dream_world.front_default}"/></div>
-<h4 class="text_card">${pokemon.types[0].type.name}</h4>
+<h4 class="text_card">${pokemon.types.map((tipes)=>(tipes.type.name + "" ))}</h4>
 <h4 class="text_card">altura: ${pokemon.height}</h4>
-<h4 class="text_card">peso: ${pokemon.weight}</h4>
+<h4 class="text_card">peso: ${pokemon.weight/10}</h4>
 <h4 class="text_card">id: ${pokemon.id}</h4>
 
 `;
